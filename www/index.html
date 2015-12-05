@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+     <script src="lib/ng-cordova.min.js"></script>
+     <script src="lib/angular-cache.min.js"></script>
+     <script src="https://www.youtube.com/iframe_api"></script>
+     <script src="lib/angular-youtube-embed.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="app/app.js"></script>
+    <script src="app/app.route.js"></script>
+    <script src="app/startup/startupController.js"></script>
+    <script src="app/home/homeController.js"></script>
+    <script src="app/channel/videosController.js"></script>
+    <script src="app/constants/appConfig.js"></script>
+    <script src="app/services/youTubeService.js"></script>
+    <script src="app/services/dataService.js"></script>
+    <script src="app/services/loadingService.js"></script>
+    <script src="app/bootstrap.js"></script>
+    
+  </head>
+  <body>
+    <ion-nav-view></ion-nav-view>
+  </body>
+
+</html>

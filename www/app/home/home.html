@@ -1,0 +1,21 @@
+<ion-view>
+<ion-header-bar align-title="center" class="bar-positive">
+
+<h1 class="title">Choose a channel</h1>
+
+</ion-header-bar>
+<ion-content class="outer text-center" scroll="false">
+
+
+<div class="list">
+  <a ng-repeat="item in items"
+    href="#/showVideos/{{item.id}}/{{item.title}}"
+    class="item item-thumbnail-left">
+    <img ng-src="{{ item.imageURL}}">
+    <h2 class="channel-name">{{ item.title }}</h2>
+    
+    
+  </a>
+</div>
+</ion-content>
+</ion-view>

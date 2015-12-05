@@ -1,0 +1,29 @@
+<ion-view>
+<ion-header-bar align-title="center" class="bar-positive">
+ 
+ <a class="button icon-left ion-chevron-left button-clear " ui-sref="home"></a>
+ <h1 class="title">{{ channelTitle }}</h1>
+ 
+</ion-header-bar>
+    <ion-content class="outer text-center" >
+
+   
+     <div class="list card"  ng-repeat="video in videos" >
+
+
+      <div class="item item-image">
+        <div class="embed-responsive embed-responsive-16by9"><youtube-video class="embed-responsive-item" video-id="video.id.videoId" player-vars="playerVars"></youtube-video></div>
+      </div>
+
+
+     </div>
+
+    
+
+    
+
+       
+    <ion-infinite-scroll on-infinite="loadMore()" distance="25%">
+  </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
